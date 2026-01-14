@@ -1,0 +1,99 @@
+Layout helpers
+.min-vh-100 { min-height: 100vh; }
+.mt-auto { margin-top: auto !important; }
+
+/* Global */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f8fffa;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Hero */
+.hero { 
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url('https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg');
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+/* Section titles */
+.section-title {
+  color: #1E7F5C;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #6BBF9A;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #1E7F5C;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #16684C;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #6BBF9A;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -22px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background: #1E7F5C;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #6BBF9A;
+}
+
+footer {background: #91ff3e !important;color: white;}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(30,127,92,0.2);
+}
